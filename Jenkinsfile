@@ -34,7 +34,7 @@ pipeline {
                     sh "git checkout main"
                     sh "git add viewer.ipynb tranql_output/*"
                     sh "git commit -m 'Jenkins run output for build  #${env.BUILD_NUMBER}'"
-                    sh "git push https://$GITHUB_CREDS_USR:$e$GITHUB_CREDS_PSW@github.com/helxplatform/heal_translator_queries.git"
+                    sh "git push https://$GITHUB_CREDS_USR:$GITHUB_CREDS_PSW@github.com/helxplatform/heal_translator_queries.git"
                     }
                 }
             }
