@@ -26,17 +26,13 @@ pipeline {
                 GITHUB_CREDS = credentials('rencibuild_dockerhub_machine_user')
             }
             steps {
-                script {
-                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    def encodedPassword = URLEncoder.encode("$GITHUB_CREDS_PSW",'UTF-8')
-                    sh "git config user.name $GITHUB_CREDS_USR"
-                    sh "git config user.email $GITHUB_CREDS_USR"
-                    sh "git checkout main"
-                    sh "git add viewer.ipynb tranql_output/*"
-                    sh "git commit -m 'Jenkins run output for build  #${env.BUILD_NUMBER}'"
-                    sh "git push https://$GITHUB_CREDS_USR:$GITHUB_CREDS_PSW@github.com/helxplatform/heal_translator_queries.git"
-                    }
-                }
+                sh '''
+                git config user.name $GITHUB_CREDS_USR
+                git config user.email $GITHUB_CREDS_USR
+                git checkout main
+                git add viewer.ipynb tranql_output/*
+                git commit -m 'Jenkins run output for build  #${env.BUILD_NUMBER}'
+                git push https://$GITHUB_CREDS_USR:$GITHUB_CREDS_PSW@github.com/helxplatform/heal_translator_queries.git
             }
         }
     }
