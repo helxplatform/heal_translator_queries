@@ -1,0 +1,461 @@
+{
+  "message": {
+    "knowledge_graph": {
+      "nodes": {
+        "HP:0003419": {
+          "category": [
+            "biolink:PhenotypicFeature",
+            "biolink:DiseaseOrPhenotypicFeature",
+            "biolink:BiologicalEntity",
+            "biolink:NamedThing",
+            "biolink:Entity"
+          ],
+          "name": "Low back pain",
+          "attributes": [
+            {
+              "type": "NA",
+              "value": [
+                "HP:0003419",
+                "NCIT:C34788",
+                "UMLS:C0423682",
+                "UMLS:C0423689",
+                "UMLS:C0577660",
+                "UMLS:C0751648",
+                "SNOMEDCT:247368002",
+                "SNOMEDCT:279039007",
+                "SNOMEDCT:279040009",
+                "SNOMEDCT:300957005",
+                "MESH:D017116"
+              ],
+              "name": "equivalent_identifiers"
+            },
+            {
+              "type": "NA",
+              "value": [
+                "Low back pain",
+                "Lower Back Pain",
+                "Low Back Pain, Mechanical",
+                "Low Back Pain, Posterior Compartment",
+                "Low Back Pain, Postural",
+                "Recurrent Low Back Pain",
+                "Low Back Pain"
+              ],
+              "name": "synonyms"
+            },
+            {
+              "name": "reasoner",
+              "value": [
+                "redis:test"
+              ],
+              "type": "EDAM:data_0006"
+            }
+          ],
+          "id": "HP:0003419"
+        },
+        "MONDO:0020501": {
+          "category": [
+            "biolink:Disease",
+            "biolink:DiseaseOrPhenotypicFeature",
+            "biolink:BiologicalEntity",
+            "biolink:NamedThing",
+            "biolink:Entity"
+          ],
+          "name": "Crimean-Congo hemorrhagic fever",
+          "attributes": [
+            {
+              "type": "NA",
+              "value": [
+                "MONDO:0020501",
+                "DOID:12287",
+                "ORPHANET:99827",
+                "UMLS:C0019099",
+                "UMLS:C1304456",
+                "MESH:D006479",
+                "MEDDRA:10010685",
+                "NCIT:C34682",
+                "SNOMEDCT:402919000"
+              ],
+              "name": "equivalent_identifiers"
+            },
+            {
+              "type": "NA",
+              "value": [
+                "Crimean-Congo hemorrhagic fever",
+                "Hemorrhagic Fever, Crimean",
+                "Congo hemorrhagic fever",
+                "Hemorrhagic Fever, Crimean",
+                "Congo-Crimean Hemorrhagic Fever"
+              ],
+              "name": "synonyms"
+            },
+            {
+              "name": "reasoner",
+              "value": [
+                "redis:test"
+              ],
+              "type": "EDAM:data_0006"
+            }
+          ],
+          "id": "MONDO:0020501"
+        },
+        "PUBCHEM.COMPOUND:37542": {
+          "category": [
+            "biolink:ChemicalSubstance",
+            "biolink:Entity",
+            "biolink:NamedThing",
+            "biolink:BiologicalEntity",
+            "biolink:MolecularEntity"
+          ],
+          "name": "Ribavirin",
+          "attributes": [
+            {
+              "type": "NA",
+              "value": [
+                "PUBCHEM.COMPOUND:37542",
+                "CHEMBL.COMPOUND:CHEMBL1643",
+                "UNII:49717AWG6K",
+                "CHEBI:63580",
+                "DRUGBANK:DB00811",
+                "MESH:D012254",
+                "GTOPDB:6842",
+                "HMDB:HMDB0014949",
+                "INCHIKEY:GIBWPZZGRLPFLD-KDKGTWAZSA-N"
+              ],
+              "name": "equivalent_identifiers"
+            },
+            {
+              "type": "NA",
+              "value": [
+                "Ribavirin",
+                "RIBAVIRIN",
+                "ribavirin",
+                "Ribavirin"
+              ],
+              "name": "synonyms"
+            },
+            {
+              "name": "reasoner",
+              "value": [
+                "redis:test"
+              ],
+              "type": "EDAM:data_0006"
+            }
+          ],
+          "id": "PUBCHEM.COMPOUND:37542"
+        },
+        "MONDO:0021668": {
+          "category": [
+            "biolink:Disease",
+            "biolink:DiseaseOrPhenotypicFeature",
+            "biolink:BiologicalEntity",
+            "biolink:NamedThing",
+            "biolink:Entity"
+          ],
+          "name": "disorder involving pain",
+          "attributes": [
+            {
+              "type": "NA",
+              "value": [
+                "MONDO:0021668",
+                "DOID:0060164",
+                "UMLS:C0234238",
+                "UMLS:C0458257",
+                "UMLS:C0751408",
+                "UMLS:C1300028",
+                "NCIT:C101181",
+                "NCIT:C86024",
+                "SNOMEDCT:22253000",
+                "SNOMEDCT:27635008",
+                "SNOMEDCT:279097006",
+                "SNOMEDCT:373673007",
+                "SNOMEDCT:410711009",
+                "HP:0012531"
+              ],
+              "name": "equivalent_identifiers"
+            },
+            {
+              "type": "NA",
+              "value": [
+                "disorder involving pain",
+                "Ache",
+                "Pain, Splitting",
+                "Suffering, Physical",
+                "Disorder characterized by pain",
+                "Splitting Pain",
+                "Ache",
+                "Pain"
+              ],
+              "name": "synonyms"
+            },
+            {
+              "name": "reasoner",
+              "value": [
+                "redis:test"
+              ],
+              "type": "EDAM:data_0006"
+            }
+          ],
+          "id": "MONDO:0021668"
+        }
+      },
+      "edges": {
+        "7221a61e150b175aee051029a653fadc": {
+          "subject": "MONDO:0020501",
+          "object": "HP:0003419",
+          "predicate": "biolink:related_to",
+          "attributes": [
+            {
+              "type": "NA",
+              "name": "edge_label",
+              "value": "related_to"
+            },
+            {
+              "type": "NA",
+              "name": "relation",
+              "value": [
+                "RO:0040035"
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "source_database",
+              "value": [
+                "UberGraph properties-nonredundant"
+              ]
+            },
+            {
+              "name": "reasoner",
+              "value": [
+                "redis:test"
+              ],
+              "type": "EDAM:data_0006"
+            }
+          ],
+          "id": "7221a61e150b175aee051029a653fadc"
+        },
+        "d0f67d009fffc1f6f01607440451e72c": {
+          "subject": "PUBCHEM.COMPOUND:37542",
+          "object": "MONDO:0020501",
+          "predicate": "biolink:treats",
+          "attributes": [
+            {
+              "type": "NA",
+              "name": "ctime",
+              "value": [
+                1593809928.61348
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "provided_by",
+              "value": [
+                "ctd.disease_to_chemical"
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "publications",
+              "value": [
+                "PMID:2546248"
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "relation",
+              "value": [
+                "CTD:therapeutic"
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "relation_label",
+              "value": [
+                "therapeutic"
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "source_database",
+              "value": [
+                "ctd"
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "source_id",
+              "value": [
+                "CHEBI:63580"
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "target_id",
+              "value": [
+                "MONDO:0020501"
+              ]
+            },
+            {
+              "name": "reasoner",
+              "value": [
+                "redis:test"
+              ],
+              "type": "EDAM:data_0006"
+            }
+          ],
+          "id": "d0f67d009fffc1f6f01607440451e72c"
+        },
+        "9c17121990b2c0258652b0d92731a3d7": {
+          "subject": "PUBCHEM.COMPOUND:37542",
+          "object": "MONDO:0021668",
+          "predicate": "biolink:treats",
+          "attributes": [
+            {
+              "type": "NA",
+              "name": "ctime",
+              "value": [
+                1585045840.45185
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "provided_by",
+              "value": [
+                "ctd.disease_to_chemical"
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "publications",
+              "value": [
+                "PMID:16563475"
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "relation",
+              "value": [
+                "CTD:therapeutic"
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "relation_label",
+              "value": [
+                "therapeutic"
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "source_database",
+              "value": [
+                "ctd"
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "source_id",
+              "value": [
+                "CHEBI:63580"
+              ]
+            },
+            {
+              "type": "NA",
+              "name": "target_id",
+              "value": [
+                "MONDO:0021668"
+              ]
+            },
+            {
+              "name": "reasoner",
+              "value": [
+                "redis:test"
+              ],
+              "type": "EDAM:data_0006"
+            }
+          ],
+          "id": "9c17121990b2c0258652b0d92731a3d7"
+        }
+      }
+    },
+    "results": [
+      {
+        "node_bindings": {
+          "lower_back_pain": [
+            {
+              "id": "HP:0003419"
+            }
+          ],
+          "d2": [
+            {
+              "id": "MONDO:0020501"
+            }
+          ],
+          "chemical_substance": [
+            {
+              "id": "PUBCHEM.COMPOUND:37542"
+            }
+          ],
+          "disorder_involving_pain": [
+            {
+              "id": "MONDO:0021668"
+            }
+          ]
+        },
+        "edge_bindings": {
+          "e1_d2_lower_back_pain": [
+            {
+              "id": "7221a61e150b175aee051029a653fadc"
+            }
+          ],
+          "e2_chemical_substance_d2": [
+            {
+              "id": "d0f67d009fffc1f6f01607440451e72c"
+            }
+          ],
+          "e3_chemical_substance_disorder_involving_pain": [
+            {
+              "id": "9c17121990b2c0258652b0d92731a3d7"
+            }
+          ]
+        }
+      }
+    ],
+    "query_graph": {
+      "edges": {
+        "e1_d2_lower_back_pain": {
+          "subject": "d2",
+          "object": "lower_back_pain"
+        },
+        "e2_chemical_substance_d2": {
+          "subject": "chemical_substance",
+          "object": "d2",
+          "predicate": "biolink:treats"
+        },
+        "e3_chemical_substance_disorder_involving_pain": {
+          "subject": "chemical_substance",
+          "object": "disorder_involving_pain"
+        }
+      },
+      "nodes": {
+        "lower_back_pain": {
+          "category": "biolink:PhenotypicFeature",
+          "id": [
+            "HP:0003419"
+          ]
+        },
+        "d2": {
+          "category": "biolink:Disease"
+        },
+        "chemical_substance": {
+          "category": "biolink:ChemicalSubstance"
+        },
+        "disorder_involving_pain": {
+          "category": "biolink:Disease",
+          "id": [
+            "MONDO:0021668"
+          ]
+        }
+      }
+    }
+  }
+}
