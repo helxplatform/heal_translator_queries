@@ -22,10 +22,19 @@ pipeline {
             }
         }
         stage('Publish') {
+            environment {
+                GITHUB_CREDS = credentials('rencibuild_dockerhub_machine_user')
+            }
             steps {
-                sh '''
-                echo "need to add git push of the output and notebook"
-                '''
+                script {
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    def encodedPassword = URLEncoder.encode("${env.GITHUB_CREDS_PSW}",'UTF-8')
+                    sh "git config user.name ${env.GITHUB_CREDS_USR}"
+                    sh "git add viewer.ipynb tranql_output/*"
+                    sh "git commit -m 'Jenkins run output: ${env.BUILD_NUMBER}'"
+                    sh "git push https://${env.GITHUB_CREDS_USR}:${encodedPassword}github.com/helxplatform/heal_translator_queries.git"
+                    }
+                }
             }
         }
     }
