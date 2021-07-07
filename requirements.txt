@@ -1,0 +1,4 @@
+requests
+gamma_viewer
+ipython
+notebook
