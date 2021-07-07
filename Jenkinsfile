@@ -28,12 +28,12 @@ pipeline {
             steps {
                 script {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    def encodedPassword = URLEncoder.encode("${env.GITHUB_CREDS_PSW}",'UTF-8')
-                    sh "git config user.name ${env.GITHUB_CREDS_USR}"
-                    sh "git config user.email ${env.GITHUB_CREDS_USR}"
+                    def encodedPassword = URLEncoder.encode("$GITHUB_CREDS_PSW",'UTF-8')
+                    sh "git config user.name $GITHUB_CREDS_USR"
+                    sh "git config user.email $GITHUB_CREDS_USR"
                     sh "git add viewer.ipynb tranql_output/*"
-                    sh "git commit -m 'Jenkins run output: ${env.BUILD_NUMBER}'"
-                    sh "git push https://${env.GITHUB_CREDS_USR}:${encodedPassword}github.com/helxplatform/heal_translator_queries.git"
+                    sh "git commit -m 'Jenkins run output for build  #${env.BUILD_NUMBER}'"
+                    sh "git push https://$GITHUB_CREDS_USR:$encodedPassword@github.com/helxplatform/heal_translator_queries.git"
                     }
                 }
             }
