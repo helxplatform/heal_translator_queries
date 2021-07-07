@@ -22,8 +22,6 @@ pipeline {
             }
         }
         stage('Publish') {
-            environment {
-            }
             steps {
                 sh '''
                 echo "need to add git push of the output and notebook"
