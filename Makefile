@@ -16,9 +16,11 @@ install:
 	${PYTHON} -m pip install -r requirements.txt
 	${PYTHON} -m pip install .
 
+#run: Run queries
 run:
-    echo "Running queries"
-    ${PYTHON} main.py
+	echo "Running queries"
+	${PYTHON} main.py
 
+#publish: Publish query results
 publish:
-    echo "not implemented"
+	echo "not implemented"
