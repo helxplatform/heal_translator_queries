@@ -1,0 +1,6 @@
+select lower_back_pain:phenotypic_feature<-d2:disease<-[treats]-chemical_substance->disorder_involving_pain:disease
+from "redis:test"
+where lower_back_pain='HP:0003419'
+and disorder_involving_pain='MONDO:0021668'
+and limit=2000
+    

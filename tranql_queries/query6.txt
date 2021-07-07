@@ -1,0 +1,6 @@
+set shoulder_pain='HP:0030834'
+Select chemical_substance->gene->disease->pain:phenotypic_feature
+from "redis:test"
+where pain=$shoulder_pain
+and limit=2000
+    

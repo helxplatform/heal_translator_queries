@@ -1,0 +1,5 @@
+select chemical_substance->gene->pain_disorder:disease->phenotypic_feature
+from "redis:test"
+where pain_disorder='MONDO:0021668'
+and limit=2400
+    

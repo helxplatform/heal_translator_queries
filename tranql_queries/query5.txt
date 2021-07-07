@@ -1,0 +1,6 @@
+set opitate_dependence='MONDO:0005530'
+select gene<-chemical_substance->disease<-gene->chemical_substance
+from "redis:test"
+where disease=$opiate_dependence
+and limit=2000
+    
