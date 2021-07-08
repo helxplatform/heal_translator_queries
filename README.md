@@ -22,7 +22,11 @@ pip install -r requirements.txt
 python main.py
 ```
 ##### View
+###### Local
 ```shell
 jupyter nbextension enable --py gamma_viewer 
 jupyter notebook viewer.ipynb
 ```
+###### Binder link
+
+On web browser go to [this binder link.](https://mybinder.org/v2/gh/helxplatform/heal_translator_queries.git/HEAD?filepath=viewer.ipynb)
